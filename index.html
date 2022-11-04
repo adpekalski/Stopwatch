@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stopwatch</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/1c3f02e028.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <h1>Stopwatch</h1>
+    <p class="stopwatch">00:00:00</p>
+    <p class="time time-hidden">Last time: 00:00:00</p>
+    <div class="buttons">
+      <button class="all-buttons big-buttons start"><i class="fas fa-play"></i></button>
+      <button class="all-buttons big-buttons pause "><i class="fas fa-pause"></i></button>
+      <button class="all-buttons big-buttons stop "><i class="fas fa-stop"></i></button>
+      <button class="all-buttons big-buttons reset"><i class="fas fa-times"></i></button>
+      <button class="all-buttons small-buttons info"><i class="fas fa-question"></i></button>
+      <button class="all-buttons small-buttons settings"><i class="fa-solid fa-brush"></i></button>
+      <button class="all-buttons big-buttons history">archives</button>
+    </div>
+    <div class="list-box">
+      <ul class="time-list time-list-hidden">
+      </ul>
+    </div>
+    <div class="color-bar color-bar-hidden">
+      <p><i class="fa-solid fa-circle first-circle"></i></p>
+      <p><i class="fa-solid fa-circle second-circle"></i></p>
+      <p><i class="fa-solid fa-circle third-circle"></i></p>
+      <p><i class="fa-solid fa-circle fourth-circle"></i></p>
+      <p><i class="fa-solid fa-circle fifth-circle"></i></p>
+      <p><i class="fa-solid fa-circle sixth-circle"></i></p>
+    </div>
+  </div>
+
+  <div class="modal-shadow">
+    <div class="modal">
+      <h3>Instruction:</h3>
+      <p><i class="fas fa-play"></i> - start</p>
+      <p><i class="fas fa-pause"></i> - pause</p>
+      <p><i class="fas fa-stop"></i> - stop</p>
+      <p><i class="fas fa-times"></i> - delete everything (including archive)</p>
+      <p><strong>archives</strong> - show previous measurements</p>
+      <button class="big-buttons close">Close</button>
+    </div>
+  </div>
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
